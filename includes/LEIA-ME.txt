@@ -1,0 +1,2 @@
+Aqui ficarão os pedaços reaproveitados do site (menu lateral, player, topo),
+para não repetir código em todas as páginas. Entram na etapa 3.

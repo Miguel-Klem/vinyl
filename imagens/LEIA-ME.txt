@@ -1,0 +1,3 @@
+Coloque aqui as capas dos albuns (ex: capa1.jpg, capa2.jpg).
+O nome do arquivo tem que ser IGUAL ao que está na coluna "capa" da tabela musicas.
+Subpastas: perfis (fotos dos usuários) e playlists (imagens das playlists).

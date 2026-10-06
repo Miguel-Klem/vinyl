@@ -1,0 +1,47 @@
+NOMES DOS ARQUIVOS (renomeie seus arquivos exatamente assim)
+
+== MP3 -> pasta musicas/ ==
+snuff.mp3   <-  Snuff (Slipknot)
+before_i_forget.mp3   <-  Before I Forget (Slipknot)
+wait_and_bleed.mp3   <-  Wait and Bleed (Slipknot)
+come_as_you_are.mp3   <-  Come As You Are (Nirvana)
+highway_to_hell.mp3   <-  Highway to Hell (AC/DC)
+tnt.mp3   <-  TNT (AC/DC)
+welcome_to_the_jungle.mp3   <-  Welcome To The Jungle (Guns N' Roses)
+creep.mp3   <-  Creep (Radiohead)
+thunderstruck.mp3   <-  Thunderstruck (AC/DC)
+paranoid.mp3   <-  Paranoid (Black Sabbath)
+i_was_made_for_lovin_you.mp3   <-  I Was Made For Lovin You (KISS)
+iron_man.mp3   <-  Iron Man (Black Sabbath)
+money.mp3   <-  Money (Pink Floyd)
+smells_like_teen_spirit.mp3   <-  Smells Like Teen Spirit (Nirvana)
+bohemian_rhapsody.mp3   <-  Bohemian Rhapsody (Queen)
+back_in_black.mp3   <-  Back In Black (AC/DC)
+crazy_train.mp3   <-  Crazy Train (Ozzy Osbourne)
+
+== CAPAS -> pasta imagens/ (uma por álbum, as músicas do mesmo álbum dividem a capa) ==
+a_night_at_the_opera.jpg
+all_hope_is_gone.jpg
+appetite_for_destruction.jpg
+back_in_black.jpg
+blizzard_of_ozz.jpg
+chocolate_starfish_and_the_hot_dog_flavored_water.jpg
+demon_days.jpg
+dynasty.jpg
+follow_the_leader.jpg
+gorillaz.jpg
+highway_to_hell.jpg
+kill_em_all.jpg
+korn.jpg
+life_is_killing_me.jpg
+master_of_puppets.jpg
+metallica.jpg
+nevermind.jpg
+pablo_honey.jpg
+paranoid.jpg
+ride_the_lightning.jpg
+slipknot.jpg
+t_n_t.jpg
+the_dark_side_of_the_moon.jpg
+the_razors_edge.jpg
+vol_3_the_subliminal_verses.jpg
