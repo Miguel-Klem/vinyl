@@ -1,6 +1,6 @@
 <?php
-// Página só para TESTAR se tudo está funcionando.
 // Abra: http://localhost/vinyl/paginas/teste_conexao.php
+
 require_once '../configuracao/conexao.php';
 
 echo '<h2>Conexão OK!</h2>';
