@@ -88,3 +88,361 @@ a { color: inherit; text-decoration: none; }
 
 .cartao-musica img { width: 100%; border-radius: 6px; }
 .cartao-musica small { color: var(--texto-suave); }
+
+
+/* =====================================================
+   ETAPA 2: TELAS DE LOGIN, CADASTRO E SENHA
+   ===================================================== */
+
+.logo-formulario {                /* logo no topo do formulário */
+  display: block;
+  width: 90px;
+  margin: 0 auto 16px;
+}
+.caixa-formulario h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+.caixa-formulario label {
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+.botao-largo {                    /* botão que ocupa a largura toda */
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.botao-espaco { margin-top: 12px; }
+.texto-centro { text-align: center; color: var(--texto-suave); }
+
+.mensagem-erro {                  /* caixinha vermelha de erro */
+  background: #3a1620;
+  color: #ff8a9b;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.mensagem-sucesso {               /* caixinha verde de sucesso */
+  background: #12301f;
+  color: #7ee0a3;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.link-esqueceu {                  /* "Esqueceu a Senha?" */
+  display: block;
+  text-align: right;
+  margin: -8px 0 20px;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+.link-esqueceu:hover { color: var(--roxo); }
+
+.link-voltar {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+.link-voltar:hover { color: var(--roxo); }
+
+.linha-termos {                   /* caixinha dos termos */
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.caixa-formulario .linha-termos input {
+  width: auto;
+  margin: 3px 0 0;
+}
+.linha-termos a { color: var(--roxo); text-decoration: underline; }
+
+.caixa-texto { width: 600px; }    /* página de termos é mais larga */
+.caixa-texto p { margin-bottom: 10px; line-height: 1.5; color: var(--texto-suave); }
+.caixa-texto h1 { margin-top: 20px; }
+
+
+/* =====================================================
+   ETAPAS 3 E 4: SITE (menu, páginas, cartões, player)
+   ===================================================== */
+
+button { font-family: inherit; }
+
+/* ---------- principal.html: os dois quadros ---------- */
+.pagina-principal { overflow: hidden; height: 100vh; }
+.quadro-site {                    /* quadro de cima: as páginas do site */
+  display: block;
+  width: 100%;
+  height: calc(100vh - 90px);
+  border: 0;
+}
+.quadro-player {                  /* quadro de baixo: a barra de música */
+  display: block;
+  width: 100%;
+  height: 90px;
+  border: 0;
+  background: #000;
+}
+
+/* ---------- menu lateral ---------- */
+.menu-lateral {
+  position: fixed; top: 0; left: 0; bottom: 0;   /* (substitui a versão antiga) */
+  width: 240px;
+  padding: 20px 14px;
+  background: var(--fundo-caixa);
+  overflow-y: auto;
+}
+.menu-logo {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 10px; margin-bottom: 22px;
+  font-size: 24px; font-weight: bold;
+}
+.menu-logo img { width: 38px; height: 38px; }
+
+.menu-itens, .menu-playlists { list-style: none; }
+.menu-itens a, .menu-playlists a {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--texto-suave);
+  font-weight: bold;
+}
+.menu-playlists a { font-weight: normal; }
+.menu-itens svg { width: 22px; height: 22px; fill: currentColor; flex: none; }
+.menu-itens a:hover, .menu-playlists a:hover { color: var(--texto); background: #22222e; }
+.menu-itens a.ativo, .menu-playlists a.ativo { color: var(--texto); background: #2a2a3a; }
+
+.menu-titulo {
+  margin: 22px 12px 10px;
+  font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--texto-suave);
+}
+.menu-lateral .botao-pequeno { margin: 0 0 10px; }
+
+/* ---------- área principal e barra de cima ---------- */
+.area-principal { margin-left: 240px; min-height: 100vh; }
+.conteudo { margin-left: 0; padding: 0 32px 40px; }   /* (substitui a versão antiga) */
+
+.topo {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; justify-content: flex-end; align-items: center; gap: 18px;
+  padding: 14px 32px;
+  background: var(--fundo);
+}
+.topo-sair { font-size: 14px; color: var(--texto-suave); }
+.topo-sair:hover { color: var(--roxo); }
+.topo-perfil img {
+  display: block;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #000;
+  border: 2px solid var(--roxo);
+}
+
+/* ---------- títulos, seções e textos ---------- */
+.titulo-pagina { font-size: 32px; margin-bottom: 24px; }
+.secao { margin-bottom: 40px; }
+.secao h2 { font-size: 22px; margin-bottom: 16px; }
+.estado-vazio { color: var(--texto-suave); padding: 6px 0 20px; line-height: 1.5; }
+.texto-suave { color: var(--texto-suave); font-size: 14px; }
+.link-destaque { color: var(--roxo); text-decoration: underline; }
+.aviso-sessao { padding: 14px; color: var(--texto-suave); }
+.aviso-sessao a { color: var(--roxo); text-decoration: underline; }
+
+/* ---------- botões extras ---------- */
+.botao-pequeno { padding: 8px 16px; font-size: 14px; }
+.botao-perigo { background: #c0314a; }
+.botao-perigo:hover { background: #a02840; }
+.botao-texto {
+  background: none; border: none; padding: 0;
+  color: var(--texto-suave); font-size: 13px; cursor: pointer;
+}
+.botao-texto:hover { color: var(--roxo); }
+
+/* ---------- cartões (músicas, playlists) ---------- */
+.fileira {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+.cartao-musica { width: auto; position: relative; transition: background .15s; }
+.cartao-musica:hover { background: #22222e; }
+.cartao-musica a { display: block; }
+.cartao-musica img {
+  display: block; width: 100%;
+  aspect-ratio: 1 / 1; object-fit: cover;
+  margin-bottom: 10px; background: #000;
+}
+.cartao-musica strong, .cartao-musica small {
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cartao-musica small { margin-top: 3px; }
+.posicao {                        /* etiqueta com o número do ranking */
+  position: absolute; top: 18px; left: 18px; z-index: 2;
+  background: var(--roxo);
+  padding: 3px 10px; border-radius: 20px;
+  font-size: 13px; font-weight: bold;
+}
+.tile-roxo {                      /* quadrado roxo (Curtidas e "Criar playlist") */
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #8b5cf6, #3b1d8f);
+}
+.cartao-musica .tile-roxo img { width: 55%; margin: 0; aspect-ratio: auto; background: transparent; }
+.tile-novo span { font-size: 56px; font-weight: bold; }
+
+.cartao-pessoa {
+  display: block; text-align: center;
+  padding: 16px 12px;
+  background: var(--fundo-caixa);
+  border-radius: 8px;
+}
+.cartao-pessoa:hover { background: #22222e; }
+.cartao-pessoa img {
+  width: 110px; height: 110px;
+  border-radius: 50%; object-fit: cover;
+  background: #000; margin-bottom: 10px;
+}
+.cartao-pessoa strong, .cartao-pessoa small {
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cartao-pessoa small { color: var(--texto-suave); margin-top: 3px; }
+
+/* ---------- lista de músicas (linhas) ---------- */
+.lista-musicas { display: flex; flex-direction: column; }
+.linha-musica {
+  display: grid;
+  grid-template-columns: 36px 2fr 1.5fr auto;
+  align-items: center; gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.linha-musica:hover { background: #1d1d29; }
+.linha-numero { text-align: center; color: var(--texto-suave); }
+.linha-tocar { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.linha-tocar img { width: 48px; height: 48px; border-radius: 4px; object-fit: cover; background: #000; flex: none; }
+.linha-textos { min-width: 0; }
+.linha-textos strong, .linha-textos small {
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.linha-textos small { color: var(--texto-suave); margin-top: 3px; }
+.linha-album {
+  color: var(--texto-suave); font-size: 14px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.linha-acoes { display: flex; align-items: center; gap: 16px; font-size: 13px; }
+.linha-acoes a { color: var(--texto-suave); }
+.linha-acoes a:hover { color: var(--roxo); }
+.linha-playlist {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px; border-radius: 8px;
+}
+.linha-playlist:hover { background: #1d1d29; }
+
+/* ---------- cabeçalho de playlist e de perfil ---------- */
+.cabecalho-pagina { display: flex; align-items: flex-end; gap: 24px; padding: 6px 0 26px; }
+.cabecalho-capa, .cabecalho-capa-roxa {
+  width: 200px; height: 200px; flex: none;
+  border-radius: 8px; object-fit: cover; background: #000;
+}
+.cabecalho-capa-roxa {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #8b5cf6, #3b1d8f);
+}
+.cabecalho-capa-roxa img { width: 110px; }
+.foto-perfil-grande {
+  width: 200px; height: 200px; flex: none;
+  border-radius: 50%; object-fit: cover; background: #000;
+  border: 4px solid var(--roxo);
+}
+.foto-perfil-media {
+  display: block; width: 120px; height: 120px; margin: 0 auto 20px;
+  border-radius: 50%; object-fit: cover; background: #000;
+  border: 3px solid var(--roxo);
+}
+.cabecalho-tipo { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--texto-suave); }
+.cabecalho-pagina h1 { font-size: 44px; line-height: 1.1; margin: 6px 0 12px; }
+.cabecalho-info { color: var(--texto-suave); font-size: 14px; }
+.cabecalho-info strong { color: var(--texto); }
+.cabecalho-pequeno { padding-bottom: 16px; }
+.cabecalho-pequeno .cabecalho-capa { width: 90px; height: 90px; }
+.cabecalho-pequeno h2 { font-size: 22px; margin-bottom: 6px; }
+.barra-acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.barra-acoes form { margin: 0; }
+.aviso-exclusao {
+  background: #3a1620; color: #ffb3c0;
+  padding: 16px 20px; border-radius: 8px; margin-bottom: 20px;
+}
+.aviso-exclusao p { margin-bottom: 14px; }
+.aviso-exclusao form { display: flex; gap: 12px; }
+
+/* ---------- busca ---------- */
+.busca-form { display: flex; gap: 12px; margin-bottom: 30px; max-width: 640px; }
+.busca-form input {
+  flex: 1; padding: 14px 22px;
+  background: var(--fundo-caixa); color: var(--texto);
+  border: 1px solid #333; border-radius: 30px; font-size: 16px;
+}
+
+/* ---------- formulários dentro do site ---------- */
+.conteudo .caixa-formulario { width: 100%; max-width: 480px; margin: 0 0 20px; }
+.conteudo .caixa-formulario input[type="file"] { padding: 10px; }
+.conteudo .caixa-formulario .linha-termos input { width: auto; }
+
+/* ---------- player (quadro de baixo) ---------- */
+.corpo-player { background: #000; overflow: hidden; height: 90px; }
+.barra-player {
+  height: 90px;
+  display: grid; grid-template-columns: 1fr 2fr 1fr;
+  align-items: center; gap: 16px;
+  padding: 0 20px;
+  border-top: 1px solid #222;
+}
+.player-info { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.player-capa { width: 56px; height: 56px; border-radius: 4px; object-fit: cover; background: var(--fundo-caixa); flex: none; }
+.player-textos { min-width: 0; }
+.player-textos strong, .player-textos small {
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.player-textos strong { font-size: 14px; }
+.player-textos small { color: var(--texto-suave); margin-top: 3px; }
+.quadro-curtir { width: 46px; height: 46px; border: 0; flex: none; }
+
+.player-controles { display: flex; align-items: center; justify-content: center; gap: 14px; min-width: 0; }
+.player-controles audio { flex: 1; max-width: 560px; height: 40px; color-scheme: dark; }
+.audio-vazio { flex: 1; max-width: 560px; text-align: center; color: #555; font-size: 13px; }
+.botao-controle {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; flex: none;
+  border-radius: 50%;
+  background: var(--roxo); color: var(--texto);
+}
+.botao-controle:hover { background: var(--roxo-escuro); }
+.botao-controle svg { width: 18px; height: 18px; fill: currentColor; }
+.botao-controle.desativado { background: #2a2a35; color: #666; cursor: not-allowed; }
+.botao-controle.desativado:hover { background: #2a2a35; }
+.player-extra { text-align: right; font-size: 14px; }
+.player-extra a { color: var(--texto-suave); }
+.player-extra a:hover { color: var(--roxo); }
+
+/* ---------- botão de curtir (vinil) ---------- */
+.corpo-curtir { background: #000; overflow: hidden; }
+.corpo-curtir form { margin: 0; }
+.botao-vinil { display: block; padding: 8px; background: none; border: none; cursor: pointer; }
+.botao-vinil svg { display: block; width: 30px; height: 30px; transition: transform .15s; }
+.botao-vinil:hover svg { transform: scale(1.12); }
+.botao-vinil .vinil-disco  { fill: none; stroke: var(--texto-suave); stroke-width: 1.6; }
+.botao-vinil .vinil-sulco  { fill: none; stroke: #555; stroke-width: 0.6; }
+.botao-vinil .vinil-miolo  { fill: none; stroke: var(--texto-suave); stroke-width: 1.6; }
+.botao-vinil.curtida .vinil-disco { fill: #111; stroke: var(--roxo); }
+.botao-vinil.curtida .vinil-sulco { stroke: #3a3a4a; }
+.botao-vinil.curtida .vinil-miolo { fill: var(--roxo); stroke: var(--roxo); }

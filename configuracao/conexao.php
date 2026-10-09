@@ -3,7 +3,7 @@
 
 $servidor = 'localhost';
 $usuario  = 'root';
-$senha    = 'Senai@118'; // Senha MySQL
+$senha    = '94265221118'; // Senha MySQL
 $banco    = 'vinyl';
 
 // Tenta conectar

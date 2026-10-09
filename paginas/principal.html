@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="pagina-principal">
+
+<!--
+    ESQUELETO DO SITE (HTML puro).
+    São dois "quadros" (iframes) um embaixo do outro:
+
+    1) "conteudo": as páginas do site (início, busca, playlists...).
+       Quando você clica no menu, só este quadro muda.
+
+    2) "player": a barra de música de baixo. Como ela fica em um quadro
+       separado, a música NÃO para quando você troca de página lá em cima.
+
+    Os links de "tocar" usam target="player" para mandar a música para o quadro de baixo.
+-->
+
+<iframe class="quadro-site" name="conteudo" src="inicio.php" title="Vinyl"></iframe>
+<iframe class="quadro-player" name="player" src="player.php" title="Player de música" allow="autoplay"></iframe>
+
+</body>
+</html>

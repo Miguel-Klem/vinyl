@@ -1,0 +1,39 @@
+VINYL - ETAPAS 3 E 4 (site completo)
+
+COMO INSTALAR
+1. Copie o conteudo desta pasta "vinyl" para dentro da SUA pasta vinyl
+   (C:\xampp\htdocs\vinyl) e aceite SUBSTITUIR os arquivos que ja existem.
+   Isso NAO mexe no banco, nas musicas, nas capas nem no configuracao/conexao.php.
+2. Se ainda existir o arquivo index.php na raiz da pasta vinyl, APAGUE (o site agora usa index.html).
+3. (Opcional) Rode banco/dados_demonstracao.sql no Workbench para encher os Top 10.
+4. Abra http://localhost/vinyl/
+
+COMO O SITE FUNCIONA
+index.html (porta de entrada) -> paginas/entrar.php (login)
+  -> paginas/principal.html (esqueleto do site, com 2 quadros):
+       quadro de cima  = paginas do site (inicio, buscar, biblioteca, playlists, perfil...)
+       quadro de baixo = player.php (a musica NAO para quando voce troca de pagina)
+
+ARQUIVOS NOVOS
+includes/cabecalho.php, rodape.php  -> menu lateral + barra de cima (repetidos em toda pagina)
+paginas/principal.html              -> esqueleto com os quadros
+paginas/inicio.php                  -> recentes, Top 10 Brasil, Top 10 Rock
+paginas/buscar.php                  -> busca de musicas e pessoas
+paginas/biblioteca.php              -> playlists e quem voce segue
+paginas/curtidas.php                -> Musicas Curtidas (playlist padrao)
+paginas/playlist.php                -> ver playlist, remover musica, excluir playlist
+paginas/criar_playlist.php          -> nome + imagem
+paginas/adicionar_playlist.php      -> colocar uma musica em uma playlist
+paginas/perfil.php, editar_perfil.php, seguir.php
+paginas/player.php, curtir.php      -> barra de musica e botao de vinil
+
+ARQUIVOS ALTERADOS
+includes/sessao.php, includes/funcoes.php, css/estilo.css (o seu + bloco novo no final)
+paginas/entrar.php, cadastro.php, sair.php, termos.php
+
+PASTAS CRIADAS SOZINHAS PELO SITE
+imagens/perfis/            -> fotos de perfil enviadas
+imagens/capas_playlists/   -> imagens das playlists criadas
+
+PARA MUDAR O TOP 10 ROCK
+includes/funcoes.php -> funcao generos_rock() (lista de palavras que contam como Rock)
