@@ -1,8 +1,6 @@
 <?php
-// =====================================================
+
 // PÁGINA INICIAL
-// Mostra: ouvidas recentemente, Top 10 do Brasil e Top 10 Rock.
-// =====================================================
 
 require_once '../configuracao/conexao.php';
 require_once '../includes/sessao.php';

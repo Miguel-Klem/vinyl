@@ -1,6 +1,5 @@
 <?php
-// =====================================================
-// SESSÃO = a "memória" do site sobre quem está logado.
+// SESSÃO: Quem está logado.
 // Quem faz login ganha $_SESSION['usuario_id'] e $_SESSION['usuario_nome'].
 //
 // Como usar em uma página:

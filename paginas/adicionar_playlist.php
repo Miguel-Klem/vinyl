@@ -1,8 +1,6 @@
 <?php
-// =====================================================
+
 // ADICIONAR UMA MÚSICA A UMA PLAYLIST
-// Chega aqui pelo link "+ Playlist" das músicas e do player.
-// =====================================================
 
 require_once '../configuracao/conexao.php';
 require_once '../includes/sessao.php';
@@ -10,11 +8,8 @@ require_once '../includes/funcoes.php';
 
 exigir_login_quadro();
 $meu_id = (int) $_SESSION['usuario_id'];
-
 $musica_id = (int) ($_GET['musica'] ?? $_POST['musica'] ?? 0);
-
 $musica = buscar_um($conexao, SQL_MUSICAS . ' WHERE m.id = ?', 'i', array($musica_id));
-
 $mensagem = '';
 
 // ----- Clicou em "Adicionar" em alguma playlist -----
